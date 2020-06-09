@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.main-navigation {
+  margin-top: 93px;
+  text-align: center;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.visually-hidden:not(:focus):not(:active) {
+  /* ... */
+}
+.main-buttons {
+  display: inline-flex;
+  list-style: none;
+  margin-bottom: 56px;
+}
+.buttons-main {
+  margin-right: 8px;
+  text-decoration: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  transition: 0.3s ease-in;
+}
+.buttons-main:hover,
+.buttons-main:focus {
+  background: var(--main-color);
+  color: #ffffff;
+}
+.projects-row {
+  display: block;
+  padding-right: 30px;
+  margin-bottom: 114px;
+  margin: 0;
+  padding: 0;
+}
+.projects-card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-right: 30px;
+  list-style: none;
+  display: inline-block;
+}
+
+.projects-card:hover,
+.projects-card:focus {
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.projects-card a {
+  text-decoration: none;
+}
+.projects-card h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+  padding-left: 24px;
+}
+.projects-card p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--little-text-color);
+  padding-left: 24px;
+}
