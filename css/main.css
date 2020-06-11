@@ -94,7 +94,7 @@
 
 .header-main-content {
   height: 600px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   background-image: url("../img/1st/Header-img.png");
   background-repeat: no-repeat;
   text-align: center;
@@ -130,7 +130,8 @@
 
 /* MAIN */
 .main-info {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .main-advantages {
   width: 1200px;
@@ -138,7 +139,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .main-list {
   margin-top: 0;
@@ -220,7 +221,7 @@
 
 .team {
   background-color: #f5f4fa;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   height: 702px;
 }
 .team-title {
@@ -334,7 +335,7 @@
   margin-right: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .footer-company {
   min-width: 170px;
@@ -361,12 +362,12 @@
 }
 
 .footer-contacts {
-  height: 253px;
+  min-height: 253px;
   background-color: #2f303a;
 }
 .footer-navigation {
   width: 1200px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -375,6 +376,19 @@
   display: flex;
   justify-content: space-between;
   padding-top: 45px;
+}
+.footer-web-studio {
+  margin-right: 85px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+.footer-web-studio span {
+  color: var(--main-color);
 }
 .footer-adress {
   margin-top: 0;
@@ -397,10 +411,11 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social h3 {
+.footer-social p {
   margin-top: 0;
   text-align: center;
   margin-bottom: 20px;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -462,10 +477,11 @@
   display: flex;
   align-items: center;
 }
-.footer-form h3 {
+.footer-form p {
   margin-top: 0;
   text-align: center;
   margin-bottom: 20px;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -512,17 +528,17 @@
 }
 .footer-line {
   width: 1200px;
-  height: 0;
-  margin-bottom: 18px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-copyright {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
   text-align: center;
   font-weight: normal;
   font-size: 12px;
