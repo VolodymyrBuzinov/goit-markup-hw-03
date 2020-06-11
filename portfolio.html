@@ -18,42 +18,40 @@
   <body>
     <!-- HEADER-->
     <header class="header-navigation">
-      <ul class="navigation-list">
-        <li>
-          <a class="navigation-web-studio" href="./index.html"
-            ><span>Web</span> Studio</a
-          >
-        </li>
-        <li><a class="navigation-pages" href="./index.html">Студия</a></li>
-        <li>
-          <a class="navigation-pages" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li><a class="navigation-pages" href="#mail">Контакты</a></li>
-        <li>
-          <address>
-            <ul class="navigation-mail-tel">
-              <li>
-                <a class="mailto" href="mailto:info@devstudio.com"
-                  ><img
-                    src="./img/1st/envelope.svg"
-                    width="16"
-                    alt="написать письмо"
-                  />info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="tel" href="tel:+380961111111"
-                  ><img
-                    src="./img/1st/smartphone.svg"
-                    width="10"
-                    alt="позвонить"
-                  />+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </li>
-      </ul>
+      <nav class="header-navigation">
+        <a class="navigation-web-studio" href="./index.html"
+          ><span>Web</span> Studio</a
+        >
+        <ul class="navigation-list">
+          <li class="navigation-pages"><a href="./index.html">Студия</a></li>
+          <li class="navigation-pages">
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="navigation-pages"><a href="#mail">Контакты</a></li>
+          <li></li>
+        </ul>
+
+        <ul class="navigation-contacts">
+          <li class="contact-us">
+            <a href="mailto:info@devstudio.com"
+              ><img
+                src="./img/1st/envelope.svg"
+                width="16"
+                alt="написать письмо"
+              />info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-us">
+            <a href="tel:+380961111111"
+              ><img
+                src="./img/1st/smartphone.svg"
+                width="10"
+                alt="позвонить"
+              />+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- END OF HEADER -->
     <!-- MAIN INFO -->
@@ -160,26 +158,39 @@
         </ul>
 
         <div class="footer-social">
-          <div class="footer-instagram">
-            <a href="https://www.instagram.com/?hl=ru"></a>
-          </div>
-          <div class="footer-twitter">
-            <a href="https://twitter.com/explore"></a>
-          </div>
-          <div class="footer-facebook">
-            <a href="https://www.facebook.com/"></a>
-          </div>
-          <div class="footer-IN">
-            <a href="https://insocial.ca/"></a>
+          <h3>Присоединяйтесь</h3>
+          <div class="social-list">
+            <div class="footer-instagram">
+              <a href="https://www.instagram.com/?hl=ru">Instagram</a>
+            </div>
+            <div class="footer-twitter">
+              <a href="https://twitter.com/explore">Twitter</a>
+            </div>
+            <div class="footer-facebook">
+              <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+            <div class="footer-IN">
+              <a href="https://insocial.ca/">IN</a>
+            </div>
           </div>
         </div>
 
         <!-- <div class="footer-checkbox"> -->
         <form class="footer-form">
-          <input class="footer-input" type="email" id="email" value="E-mail" />
-          <div class="submmit">
-            <p>Подписаться</p>
-            <img src="./img/social/iconsend.svg" alt="отослать" />
+          <div class="input-text">
+            <div class="form">
+              <h3>Подпишитесь на рассылку</h3>
+              <input
+                class="footer-input"
+                type="email"
+                id="email"
+                value="E-mail"
+              />
+            </div>
+            <a class="submmit" href="#"
+              >Подписаться
+              <img src="./img/social/iconsend.svg" width="24" alt="отослать"
+            /></a>
           </div>
         </form>
         <!-- </div> -->

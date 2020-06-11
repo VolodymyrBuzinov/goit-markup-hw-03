@@ -18,40 +18,36 @@
     <!-- HEADER -->
     <header class="header">
       <nav class="header-navigation">
+        <a class="navigation-web-studio" href="./index.html"
+          ><span>Web</span> Studio</a
+        >
         <ul class="navigation-list">
-          <li>
-            <a class="navigation-web-studio" href="./index.html"
-              ><span>Web</span> Studio</a
+          <li class="navigation-pages"><a href="./index.html">Студия</a></li>
+          <li class="navigation-pages">
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="navigation-pages"><a href="#mail">Контакты</a></li>
+          <li></li>
+        </ul>
+
+        <ul class="navigation-contacts">
+          <li class="contact-us">
+            <a href="mailto:info@devstudio.com"
+              ><img
+                src="./img/1st/envelope.svg"
+                width="16"
+                alt="написать письмо"
+              />info@devstudio.com</a
             >
           </li>
-          <li><a class="navigation-pages" href="./index.html">Студия</a></li>
-          <li>
-            <a class="navigation-pages" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li><a class="navigation-pages" href="#mail">Контакты</a></li>
-          <li>
-            <address>
-              <ul class="navigation-mail-tel">
-                <li>
-                  <a class="mailto" href="mailto:info@devstudio.com"
-                    ><img
-                      src="./img/1st/envelope.svg"
-                      width="16"
-                      alt="написать письмо"
-                    />info@devstudio.com</a
-                  >
-                </li>
-                <li>
-                  <a class="tel" href="tel:+380961111111"
-                    ><img
-                      src="./img/1st/smartphone.svg"
-                      width="10"
-                      alt="позвонить"
-                    />+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
+          <li class="contact-us">
+            <a href="tel:+380961111111"
+              ><img
+                src="./img/1st/smartphone.svg"
+                width="10"
+                alt="позвонить"
+              />+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </nav>
@@ -66,9 +62,8 @@
     <!-- MAIN INFO -->
     <main class="main-info">
       <div class="main-advantages">
-        <ul>
-          <li>
-            <div class="main-details"></div>
+        <ul class="main-list">
+          <li class="main-details">
             <img src="./img/1st/antenna-1.svg" alt="Антенна" />
             <h2>Внимание к деталям</h2>
             <p>
@@ -76,27 +71,24 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="main-punctuality">
             <img src="./img/1st/clock-1.svg" alt="Часы" />
-            <div class="main-punctuality"></div>
             <h2>Пунктуальность</h2>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="main-plan">
             <img src="./img/1st/diagram-1.svg" alt="Диаграмма" />
-            <div class="main-plan"></div>
             <h2>Планирование</h2>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="main-tech">
             <img src="./img/1st/astronaut-1.svg" alt="Астронавт" />
-            <div class="main-tech"></div>
             <h2>Современные технологии</h2>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
@@ -108,7 +100,7 @@
       <!-- WHAT WE DO -->
       <h2 class="what-we-do-title">Чем мы занимаемся</h2>
       <div class="main-what-we-do">
-        <ul>
+        <ul class="what-we-do-list">
           <li class="main-desktop">
             <img
               src="./img/1st/desktop.png"
@@ -142,8 +134,12 @@
       <h2 class="team-title">Наша Команда</h2>
       <div class="team-container">
         <div class="team-card">
-          <img src="./img/1st/john-smith.png" alt="Джон Смит" width="270" />
-          <h3>John Smith</h3>
+          <img
+            src="./img/1st/john-smith.png"
+            alt="Николай Кучеренко"
+            width="270"
+          />
+          <h3>Николай Кучеренко</h3>
           <p>Product Designer</p>
           <ul class="team-social">
             <li class="instagram">
@@ -161,8 +157,12 @@
           </ul>
         </div>
         <div class="team-card">
-          <img src="./img/1st/team-card-2.png" alt="Марта Стюарт" width="270" />
-          <h3>Marta Stewart</h3>
+          <img
+            src="./img/1st/team-card-2.png"
+            alt="Ольга Иванова"
+            width="270"
+          />
+          <h3>Ольга Иванова</h3>
           <p>Frontend Developer</p>
           <ul class="team-social">
             <li class="instagram">
@@ -182,10 +182,10 @@
         <div class="team-card">
           <img
             src="./img/1st/team-card-3.png"
-            alt="Роберт Джейкис"
+            alt="Андрей Шевченко"
             width="270"
           />
-          <h3>Robert Jakis</h3>
+          <h3>Андрей Шевченко</h3>
           <p>Marketing</p>
           <ul class="team-social">
             <li class="instagram">
@@ -203,8 +203,12 @@
           </ul>
         </div>
         <div class="team-card">
-          <img src="./img/1st/team-card-4.png" alt="МАртин Доу" width="270" />
-          <h3>Martin Doe</h3>
+          <img
+            src="./img/1st/team-card-4.png"
+            alt="Иван Николаев"
+            width="270"
+          />
+          <h3>Иван Николаев</h3>
           <p>UI Designer</p>
           <ul class="team-social">
             <li class="instagram">
@@ -248,7 +252,7 @@
         </div>
       </div>
 
-      <nav class="footer-contacts">
+      <div class="footer-contacts">
         <div class="footer-navigation">
           <ul class="footer-adress">
             <li>
@@ -269,32 +273,38 @@
 
           <div class="footer-social">
             <h3>Присоединяйтесь</h3>
-            <div class="footer-instagram">
-              <a href="https://www.instagram.com/?hl=ru">Instagram</a>
-            </div>
-            <div class="footer-twitter">
-              <a href="https://twitter.com/explore">Twitter</a>
-            </div>
-            <div class="footer-facebook">
-              <a href="https://www.facebook.com/">Facebook</a>
-            </div>
-            <div class="footer-IN">
-              <a href="https://insocial.ca/">IN</a>
+            <div class="social-list">
+              <div class="footer-instagram">
+                <a href="https://www.instagram.com/?hl=ru">Instagram</a>
+              </div>
+              <div class="footer-twitter">
+                <a href="https://twitter.com/explore">Twitter</a>
+              </div>
+              <div class="footer-facebook">
+                <a href="https://www.facebook.com/">Facebook</a>
+              </div>
+              <div class="footer-IN">
+                <a href="https://insocial.ca/">IN</a>
+              </div>
             </div>
           </div>
 
           <!-- <div class="footer-checkbox"> -->
           <form class="footer-form">
-            <h3>Подпишитесь на рассылку</h3>
-            <input
-              class="footer-input"
-              type="email"
-              id="email"
-              value="E-mail"
-            />
-            <div class="submmit">
-              <p>Подписаться</p>
-              <img src="./img/social/iconsend.svg" alt="отослать" />
+            <div class="input-text">
+              <div class="form">
+                <h3>Подпишитесь на рассылку</h3>
+                <input
+                  class="footer-input"
+                  type="email"
+                  id="email"
+                  value="E-mail"
+                />
+              </div>
+              <a class="submmit" href="#"
+                >Подписаться
+                <img src="./img/social/iconsend.svg" width="24" alt="отослать"
+              /></a>
             </div>
           </form>
           <!-- </div> -->
@@ -303,7 +313,7 @@
         <p class="footer-copyright">
           2020 | Developed by GoIT Students
         </p>
-      </nav>
+      </div>
     </footer>
     <!-- END FOOTER -->
   </body>
