@@ -94,14 +94,25 @@
 
 .header-main-content {
   height: 600px;
-  /* margin-bottom: 94px; */
   background-image: url("../img/1st/Header-img.png");
   background-repeat: no-repeat;
   text-align: center;
   background-color: #fff;
+  position: relative;
+  z-index: 10;
 }
-
+.header-main-content::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 600px;
+  z-index: 1;
+}
 .header-title {
+  position: inherit;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -112,9 +123,11 @@
   text-transform: uppercase;
   color: #ffffff;
   padding-top: 200px;
+  z-index: 11;
 }
 .header-title-button {
   display: inline-block;
+  position: inherit;
   min-width: 200px;
   padding: 10px 32px 10px 32px;
   background: var(--main-color);
@@ -126,6 +139,7 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   text-decoration: none;
+  z-index: 12;
 }
 
 /* MAIN */
@@ -151,7 +165,7 @@
 }
 .main-list li {
   width: calc(100% / 4);
-  text-align: center;
+  text-align: left;
   margin-right: 30px;
 }
 .main-list li:last-child {
@@ -175,6 +189,49 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--little-text-color);
+}
+.main-list h2 {
+  margin-bottom: 10px;
+}
+.details-logo {
+  width: 270px;
+  height: 120px;
+  background-image: url("../img/1st/antenna-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.punctuality-logo {
+  width: 270px;
+  height: 120px;
+  background-image: url("../img/1st/clock-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.plan-logo {
+  width: 270px;
+  height: 120px;
+  background-image: url("../img/1st/diagram-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.tech-logo {
+  width: 270px;
+  height: 120px;
+  background-image: url("../img/1st/astronaut-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 /* main-what-we-do */
 .what-we-do-title {
@@ -203,12 +260,27 @@
   padding: 0;
 }
 .main-desktop {
+  width: calc(100% / 3);
   margin-right: 30px;
+  position: relative;
 }
 .main-desktop:last-child {
   margin-right: 0;
 }
+
+.main-desktop::before {
+  content: "";
+  min-width: 370px;
+  height: 71px;
+  bottom: 3px;
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 .main-desktop p {
+  min-width: 200px;
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
@@ -216,7 +288,12 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #000;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  bottom: 31px;
+  left: 0;
+  right: 0;
 }
 
 .team {
@@ -256,7 +333,7 @@
   margin-right: 0;
 }
 .team-card h3 {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -280,52 +357,74 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+  padding-bottom: 24px;
 }
 .team-social li:not(:last-child) {
   margin-right: 10px;
 }
 .instagram a {
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #000;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/instagram-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  background-size: 20px 20px;
+  display: block;
 }
 .instagram a:hover,
 .instagram a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .twitter a {
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #000;
-  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  background-size: 20px 20px;
+  display: block;
 }
 .twitter a:hover,
 .twitter a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .facebook a {
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #000;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  background-size: 20px 20px;
+  display: block;
 }
 .facebook a:hover,
 .facebook a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .IN a {
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #000;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/linkedin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  background-size: 20px 20px;
+  display: block;
 }
 .IN a:hover,
 .IN a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .footer {
   width: 100%;
+  padding-top: 94px;
 }
 .footer-clients {
   width: 1200px;
@@ -378,7 +477,8 @@
   padding-top: 45px;
 }
 .footer-web-studio {
-  margin-right: 85px;
+  display: block;
+  margin-bottom: 9px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -410,7 +510,11 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
+#mail {
+  display: block;
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
 .footer-social p {
   margin-top: 0;
   text-align: center;
@@ -434,44 +538,68 @@
   margin-right: 0;
 }
 .footer-instagram a {
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/instagram2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px 20px;
+  display: block;
 }
 .footer-instagram a:hover,
 .footer-instagram a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .footer-twitter a {
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/twitter2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px 20px;
+  display: block;
 }
 .footer-twitter a:hover,
 .footer-twitter a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .footer-facebook a {
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/facebook2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px 20px;
+  display: block;
 }
 .footer-facebook a:hover,
 .footer-facebook a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .footer-IN a {
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/social/linkedin2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px 20px;
+  display: block;
 }
 .footer-IN a:hover,
 .footer-IN a:focus {
-  color: var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .footer-form {
   display: flex;
